@@ -1,10 +1,12 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://dvou7lp4gbcn0"]
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://dvou7lp4gbcn0"]
 
 [ext_resource type="Texture2D" uid="uid://cav52clkfxwlq" path="res://assets/game/tilesets/water.png" id="1_tjtrf"]
 [ext_resource type="Texture2D" uid="uid://dehjieavw808t" path="res://assets/game/tilesets/grass.png" id="2_tkbyn"]
 [ext_resource type="Texture2D" uid="uid://dd7s7w3gxcv13" path="res://assets/game/tilesets/tilled_dirt_wide.png" id="3_v1amf"]
 [ext_resource type="Texture2D" uid="uid://cjl4k6hfdkj8g" path="res://assets/game/objects/basic_grass_biom_things.png" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://dfkha6ukrps7o" path="res://scenes/houses/large_house.tscn" id="5_pudl8"]
+[ext_resource type="PackedScene" uid="uid://islui3fsawlu" path="res://scenes/objects/trees/small_tree.tscn" id="6_uk42g"]
+[ext_resource type="PackedScene" uid="uid://cprxa3dr8to83" path="res://scenes/objects/trees/large_tree.tscn" id="7_yewih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkbyn"]
 texture = ExtResource("1_tjtrf")
@@ -477,6 +479,12 @@ texture = ExtResource("4_7cqdy")
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uk42g"]
 scenes/1/scene = ExtResource("5_pudl8")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_yewih"]
+scenes/1/scene = ExtResource("6_uk42g")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8yb5x"]
+scenes/1/scene = ExtResource("7_yewih")
+
 [resource]
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Grass Terrain"
@@ -488,3 +496,5 @@ sources/1 = SubResource("TileSetAtlasSource_v1amf")
 sources/2 = SubResource("TileSetAtlasSource_7cqdy")
 sources/3 = SubResource("TileSetAtlasSource_pudl8")
 sources/4 = SubResource("TileSetScenesCollectionSource_uk42g")
+sources/5 = SubResource("TileSetScenesCollectionSource_yewih")
+sources/6 = SubResource("TileSetScenesCollectionSource_8yb5x")
